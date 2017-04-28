@@ -9,6 +9,3 @@ Requires PySynth https://mdoege.github.io/PySynth/
 If there is a problem, you fix it.
 
 usage: python hex2wav file -b --bytes bytes -o --offset offset
-    file: the file to use to produce sound
-    bytes: number of bytes/notes to read (default 100)
-    offset: byte offset from where to read bytes/notes
