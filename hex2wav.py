@@ -47,14 +47,15 @@ def main():
                 hexv = (f.read(int(bcount)).strip('\n')).encode('hex')
                 f.close()
                 tab = mtab(hexv)
-                wavc(tab)
-                print hexv
-                if sys.platform == "linux" or sys.platform == "linux2":
-                    os.system("aplay hex2wav.wav")
-                elif sys.platform == "darwin":
-                    os.system("afplay hex2wav.wav")
-                elif sys.platform == "win32":
-                    os.system("start hex2wav.wav")
+                if tab is not None:
+                    wavc(tab)
+                    print hexv
+                    if sys.platform == "linux" or sys.platform == "linux2":
+                        os.system("aplay hex2wav.wav")
+                    elif sys.platform == "darwin":
+                        os.system("afplay hex2wav.wav")
+                    elif sys.platform == "win32":
+                        os.system("start hex2wav.wav")
         except IOError as err:
             print "I/O error({0}): {1}".format(err.errno, err.strerror)
         except:
