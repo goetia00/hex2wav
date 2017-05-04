@@ -8,4 +8,4 @@ Requires PySynth https://mdoege.github.io/PySynth/
 
 If there is a problem, you fix it.
 
-usage: python hex2wav file -b --bytes bytes -o --offset offset
+usage: python hex2wav.py file -b --bytes bytes -o --offset offset
