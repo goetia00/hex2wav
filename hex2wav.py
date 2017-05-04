@@ -59,7 +59,7 @@ def main():
         except IOError as err:
             print "I/O error({0}): {1}".format(err.errno, err.strerror)
         except:
-            print '''usage: python hex2wav file -b --bytes bytes -o --offset offset
+            print '''usage: python hex2wav.py file -b --bytes bytes -o --offset offset
     file: the file to use to produce sound
     bytes: number of bytes/notes to read (default 100)
     offset: byte offset from where to read bytes/notes'''
