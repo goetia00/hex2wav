@@ -15,7 +15,7 @@ import pysynth
 import os
 
 def mtab(hexvals):
-    tab = re.findall(r'[a-z9][0-8][1-9]', hexvals)
+    tab = re.findall(r'[a-f9][0-8][1-9]', hexvals)
     if len(tab) > 0:
         tabt = []
         for i in tab:
